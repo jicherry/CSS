@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --background-color: darkgreen; /* --로 시작함 */
+      --text-color : white;
+    }
+
+
+    .first-list {
+      background-color: var(--background-color); /* var(여기에 읽고자 하는 변수명 넣으면 됨) */ 
+      color: var(--text-color);
+      margin-left: 8px;
+    }
+
+    .second-list {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin-left: 16px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      :root {
+        --background-color: rgb(152, 211, 213); /* --로 시작함 */
+        --text-color : rgb(227, 204, 217);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="first-list">
+    <li>오렌지</li>
+    <li>사과</li>
+  </ul>
+  <ul class="second-list">
+    <li>한국</li>
+    <li>일본</li>
+    <lil>중국</lil>
+  </ul>
+</body>
+</html>
