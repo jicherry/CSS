@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      background-color: slategray;
+    }
+
+    .inner {
+      width: 50%;
+      height: 50%;
+      background-color: blue;
+      margin: auto;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 100px;
+      background-color: gray;
+      text-align: center; /* 인라인 요소 정렬할 때 사용 */ 
+    }
+
+    .box3 {
+      width: 200px;
+      height: 100px;
+      background-color: blueviolet;
+    }
+    
+    .text {
+      height: 100%;
+      line-height: 100px; /* 부모 높이만큼 */
+      text-align: center;
+    }
+
+    .box4 {
+      width: 200px;
+      height: 200px;
+      background-color: bisque;
+
+    }
+
+    .inner2 {
+      width: 80px;
+      height: 80px;
+      background-color: aqua;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .box5 {
+      width: 200px;
+      height: 200px;
+      background-color: palevioletred;
+      display: flex;
+      justify-content: center; /* 수평 */
+      align-items: center; /* 수직 */
+    }
+
+    .inner3 {
+      width: 80px;
+      height: 80px;
+      background-color: seagreen;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>margin : auto</h1>
+  <div class="box">
+    <div class="inner"></div>
+  </div>
+
+  <h1>textalign : center</h1>
+  <div class="box2">
+    <button>Text</button>
+  </div>
+
+  <h1>Text contering</h1>
+  <div class="box3">
+    <h1 class="text">Text</h1>
+  </div>
+
+  <h1>translate(50%, 50%)</h1>
+  <div class="box4">
+    <div class="inner2"></div>
+  </div>
+
+  <h1>Flex box</h1>
+  <div class="box5">
+    <div class="inner3"></div>
+  </div>
+</body>
+</html>

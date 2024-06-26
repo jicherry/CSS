@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .outer {
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    background-color: darkslategray;
+  }
+
+  .box{
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    background-color: royalblue;
+  }
+
+  .inner {
+    width: 100%;
+    height: 30%;
+  }
+
+  .inner1 {
+    background-color: palevioletred;
+  }
+  .inner2 {
+    background-color: rgb(229, 203, 146);
+  }
+  .inner3 {
+    background-color: rgb(114, 169, 203);
+  }
+
+    /* 1. position: relative; -> 기존의 자리를 유지하면서 상대적으로 지정한 위치만큼만 이동함 */
+
+    /* 2. position: absolute; -> 기존 문서에서 빠져나와서 아래 요소들이 재배치 됨. 
+    (부모요소에 따로 속성 안 지정하면 부모요소가 최상위 body로 바뀜) */
+
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box">
+      <div class="inner inner1">inner1</div>
+      <div class="inner inner2">inner2</div>
+      <div class="inner inner3">inner3</div>
+    </div>
+  </div>
+
+</body>
+</html>
